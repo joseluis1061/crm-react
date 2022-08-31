@@ -22,7 +22,6 @@ const VerCliente = () => {
     obtenerClienteApi();
   }, [])
 
-  console.log(id)
   return (
     cargando? <Spinner/> : Object.keys(cliente).length === 0? <p> No Hay Resultados</p>: 
     (
