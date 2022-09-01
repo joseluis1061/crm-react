@@ -30,7 +30,7 @@ const Formulario = ({cliente, cargando}) => {
       let response; 
       if(cliente.id){
         //Editando
-        const url = `http://localhost:3000/clientes/${cliente.id}`;
+        const url = `${import.meta.env.VITE_API_URL}/${cliente.id}`;
         response = await fetch(url, {
           method: 'PUT',
           body: JSON.stringify(values),
@@ -40,7 +40,7 @@ const Formulario = ({cliente, cargando}) => {
         });
       }else{
         //New Client
-        const url = 'http://localhost:3000/clientes';
+        const url = import.meta.env.VITE_API_URL;
         response = await fetch(url, {
           method: 'POST',
           body: JSON.stringify(values),

@@ -7,6 +7,22 @@
       "telefono": "18526365",
       "notas": "El mejor desarrollador de sofware que puedes contratar",
       "id": 1
+    },
+    {
+      "nombre": "Daniel",
+      "empresa": "Educador",
+      "email": "correo@correo.com",
+      "telefono": "798465132",
+      "notas": "Requiere un monitor",
+      "id": 2
+    },
+    {
+      "nombre": "Carolina",
+      "empresa": "Contamundo",
+      "email": "correo@correo.com",
+      "telefono": "78946523",
+      "notas": "Requiere una impresora",
+      "id": 3
     }
   ]
 }
