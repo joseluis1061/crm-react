@@ -1,3 +1,12 @@
 {
-  "clientes": []
+  "clientes": [
+    {
+      "nombre": "Jose ",
+      "empresa": "Freelancer",
+      "email": "correo@correo.com",
+      "telefono": "18526365",
+      "notas": "El mejor desarrollador de sofware que puedes contratar",
+      "id": 1
+    }
+  ]
 }
