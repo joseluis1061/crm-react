@@ -19,6 +19,27 @@ const Inicio = () => {
     obtenerClientes();
   },[]);
 
+  const handleDeleted = async id =>{
+    const confirmar = confirm('¿Deseas Eliminar Este Cliente?') 
+    if(confirmar){
+      try{
+        const url = `http://localhost:3000/clientes/${id}`;      
+        const response = await fetch(url,
+          {
+            method : 'DELETE'
+          }
+        )
+  
+        const nuevosClientes = clientes.filter(cliente => cliente.id !== id);
+  
+        setClientes(nuevosClientes)
+  
+      }catch(error){
+        console.log(error)
+      }
+    }     
+  }
+
   return (
     <>
       <h1 
@@ -46,6 +67,7 @@ const Inicio = () => {
             <Cliente 
               key = {cliente.id}
               cliente = {cliente}
+              handleDeleted = {handleDeleted}
             />
           ))}
         </tbody>

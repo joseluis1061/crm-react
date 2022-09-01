@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Cliente = ({cliente}) => {
+const Cliente = ({cliente, handleDeleted}) => {
   const navigate = useNavigate();
   const {nombre, empresa, email, telefono, notas, id} = cliente
   return (
@@ -34,6 +34,7 @@ const Cliente = ({cliente}) => {
           className='bg-red-600 hover:bg-red-700 block w-full text-white p-2 uppercase
           font-bold text-xs'
           type='button'
+          onClick={() => handleDeleted(id)}
         >
           Eliminar
         </button>
