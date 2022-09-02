@@ -21,8 +21,16 @@
       "empresa": "Contamundo",
       "email": "correo@correo.com",
       "telefono": "78946523",
-      "notas": "Requiere una impresora",
+      "notas": "Servicios de pago de impuestos ",
       "id": 3
+    },
+    {
+      "nombre": "Diana",
+      "empresa": "Solo uñas",
+      "email": "correo@correo.com",
+      "telefono": "79865321",
+      "notas": "Manicure y pedicure ",
+      "id": 5
     }
   ]
 }

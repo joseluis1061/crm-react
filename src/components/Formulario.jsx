@@ -50,7 +50,7 @@ const Formulario = ({cliente, cargando}) => {
         });
       }     
       await response.json();
-      navigate('/clientes');
+      navigate('/');
 
     }catch(error){
       console.log(error)
